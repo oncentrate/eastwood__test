@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Permian Serif Typeface';
+  src: url('../fonts/PermianSerifTypeface/PermianSlabSerifTypeface.eot');
+  src: url('../fonts/PermianSerifTypeface/PermianSlabSerifTypeface.eot?#iefix') format('embedded-opentype'), url('../fonts/PermianSerifTypeface/PermianSlabSerifTypeface.woff') format('woff'), url('../fonts/PermianSerifTypeface/PermianSlabSerifTypeface.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Georgia Bold';
+  src: url('../fonts/GeorgiaBold/Georgia-Bold.eot');
+  src: url('../fonts/GeorgiaBold/Georgia-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GeorgiaBold/Georgia-Bold.woff') format('woff'), url('../fonts/GeorgiaBold/Georgia-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

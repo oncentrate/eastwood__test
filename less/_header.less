@@ -1,0 +1,111 @@
+.header {
+  background-color: #f8f8f8;
+  &-top {
+  background-color: rgba(248,248,248, 0.5);
+  text-align: right;
+  padding: 10px 0;
+  margin-bottom: 33px;
+  }
+  &-registration {
+    color: #515151;
+    font-family: Georgia;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    letter-spacing: 0.44px;
+    display: inline-block;
+    margin-right: 110px;
+    &__link:link, &__link:visited, &__link:active, &__link:hover {
+      color: #515151;
+      text-decoration: none; 
+    }
+    &__log {
+      border-bottom: 1px #515151 solid;
+    }
+    &__reg {
+      margin-left: 5px;
+      border-bottom: 1px #515151 solid;
+    }
+  }
+  &-translate {
+    display: inline-block;
+    height: 11px;
+    color: #1a1a1a;
+    font-family: Georgia;
+    font-size: 11px;
+    font-weight: 400;
+    &__link-ru:link, &__link-ru:visited, &__link-ru:active, &__link-ru:hover {
+      color: #ffffff;
+      background-image: url("../img/header/link-bg.png");
+      background-repeat: no-repeat;
+      text-decoration: none;
+      padding: 3px 2px;
+    }
+    &__lang-en {
+      margin-left: 5px;
+      border-bottom: 1px #515151 solid;
+    }
+    &__link-en:active, &__link-en:link {
+      color: #1a1a1a;
+      text-decoration: none; 
+    }
+  }
+  &-main {
+   &__wrapper {
+     display: flex;
+     justify-content: space-between;
+     padding-bottom: 53px;
+   }
+   &__nav {
+    display: flex;
+    align-items: flex-end;
+    &-tabs {
+     padding-right: 30px;
+     color: #555555;
+     font-family: "Permian Serif Typeface";
+     font-size: 14px;
+     font-weight: 700;
+     text-transform: uppercase;
+     text-decoration: none;
+     &-op {
+       padding-right: 5px;
+       color: #555555;
+       font-family: "Permian Serif Typeface";
+       font-size: 14px;
+       font-weight: 700;
+       text-transform: uppercase;
+       text-decoration: none;
+     }
+    } 
+   }
+   &__call {
+    display: flex;
+    position: absolute;
+    margin-left: 26.6%;
+    &-descr {
+      color: #515151;
+      font-family: Georgia;
+      font-size: 11px;
+      font-style: italic;
+      line-height: 18px;
+      text-align: right;
+      padding-right: 10px;
+      &-op {
+        color: #999999;
+      }
+    }
+    &-tel {
+      color: #62aad2;
+      font-family: "Permian Serif Typeface";
+      font-size: 36px;
+      font-weight: 400; 
+    }
+    &-tel:link, &-tel:visited, &-tel:active, &-tel:hover {
+      color: #62aad2;
+      text-decoration: none;
+    }
+   } 
+  }
+  
+}

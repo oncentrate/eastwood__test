@@ -9,6 +9,74 @@
 </head>
 <body>
   
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-registration">
+          <a href="#" class="header-registration__log header-registration__link">
+            Войти
+          </a>
+          <a href="#" class="header-registration__reg header-registration__link">
+            Зарегистрироваться
+          </a>
+        </div>
+        <div class="header-translate">
+          <a href="#" class="header-translate__lang-ru header-translate__link-ru">
+            Ru
+          </span>
+          <a href="#" class="header-translate__lang-en header-translate__link-en">
+            En
+          </a>
+        </div> 
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main__wrapper">
+         <div class="header-main__img">
+          <img src="img/header/header-main-logo.png" alt="" class="header-main__logo">
+         </div>
+         <div class="header-main__nav">
+           <a href="#" class="header-main__nav-tabs">О форуме</a>
+           <a href="#" class="header-main__nav-tabs">Программа</a>
+           <a href="#" class="header-main__nav-tabs">Участники</a>
+           <a href="#" class="header-main__nav-tabs">Пресс-центр</a>
+           <a href="#" class="header-main__nav-tabs">Партнеры</a>
+           <a href="#" class="header-main__nav-tabs">О Перми</a>
+           <a href="#" class="header-main__nav-tabs-op">Контакты</a>
+         </div>
+         <div class="header-main__call">
+           <div class="header-main__call-descr">
+             Телефон горячей линии <br>
+             <span class="header-main__call-descr-op">
+              звонок по России бесплатный
+             </span>
+           </div>
+          <a href="tel:8 800 555-73-63" class="header-main__call-tel">8 800 555-73-63</a>
+         </div>  
+        </div>
+      </div>
+    </div>
+   <!-- <div class="header-main__nav-tabs-img">
+    <a href="#" class="gg">О форуме</a>
+   </div> -->
+  </header>
   
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.header-main__nav-tabs-img').hide();
+      $('header-main__nav-tabs').mouseover(function () {
+        var $nav = $(this).next('.gg');
+        $nav.slideDown();
+        $(this).addClass('header-main__close');
+        $nav.mouseleave(function () {
+          $nav.fadeOut();
+          $(this).removeClass('header-main__close');
+        });
+      }
+      );
+    }); 
+  </script>
 </body>
 </html>

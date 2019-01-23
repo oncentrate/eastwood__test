@@ -1,0 +1,60 @@
+.header {
+  background-color: #f8f8f8;
+}
+.header-top {
+  background-color: rgba(248, 248, 248, 0.5);
+  text-align: right;
+  padding: 10px 0;
+}
+.header-registration {
+  color: #515151;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  letter-spacing: 0.44px;
+  display: inline-block;
+  margin-right: 108px;
+}
+.header-registration__link:link,
+.header-registration__link:visited,
+.header-registration__link:active,
+.header-registration__link:hover {
+  color: #515151;
+  text-decoration: none;
+}
+.header-registration__log {
+  border-bottom: 1px #515151 solid;
+}
+.header-registration__reg {
+  margin-left: 5px;
+  border-bottom: 1px #515151 solid;
+}
+.header-translate {
+  display: inline-block;
+  height: 11px;
+  color: #1a1a1a;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: 400;
+}
+.header-translate__link-ru:link,
+.header-translate__link-ru:visited,
+.header-translate__link-ru:active,
+.header-translate__link-ru:hover {
+  color: #ffffff;
+  background-image: url("../img/header/link-bg.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  padding: 3px 2px;
+}
+.header-translate__lang-en {
+  margin-left: 5px;
+  border-bottom: 1px #515151 solid;
+}
+.header-translate__link-en:active,
+.header-translate__link-en:link {
+  color: #1a1a1a;
+  text-decoration: none;
+}
