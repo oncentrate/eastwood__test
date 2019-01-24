@@ -43,7 +43,7 @@
            <a href="#" class="header-main__nav-tabs">Пресс-центр</a>
            <a href="#" class="header-main__nav-tabs">Партнеры</a>
            <a href="#" class="header-main__nav-tabs">О Перми</a>
-           <a href="#" class="header-main__nav-tabs-op">Контакты</a>
+           <a href="#" class="header-main__nav-tabs__op">Контакты</a>
          </div>
          <div class="header-main__call">
            <div class="header-main__call-descr">
@@ -57,26 +57,39 @@
         </div>
       </div>
     </div>
-   <!-- <div class="header-main__nav-tabs-img">
-    <a href="#" class="gg">О форуме</a>
-   </div> -->
+
+   <div class="header-main__nav-tabs__img">
+    <div class="header-main__nav-tabs__img-wrapper">
+      <a href="#" class="header-main__nav-tabs__img__link">Новости</a>
+      <img src="img/header/line.png" class="header-main__nav-tabs__img__link__line" alt="">
+      <a href="#" class="header-main__nav-tabs__img__link">Пресс-релизы</a>
+      <img src="img/header/line.png" class="header-main__nav-tabs__img__link__line" alt="">
+      <a href="#" class="header-main__nav-tabs__img__link">Аккредитация СМИ</a>
+    </div>
+   </div>
   </header>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__text">
+        Гражданская повестка для тех, <br>
+        кто хочет жить и работать в России
+      </div>
+      <div class="slider__info"></div>
+    </div>
+  </section>
   
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('.header-main__nav-tabs-img').hide();
-      $('header-main__nav-tabs').mouseover(function () {
-        var $nav = $(this).next('.gg');
-        $nav.slideDown();
-        $(this).addClass('header-main__close');
-        $nav.mouseleave(function () {
-          $nav.fadeOut();
-          $(this).removeClass('header-main__close');
-        });
-      }
-      );
-    }); 
+    var link = $('.header-main__nav-tabs');
+    var tabsImg = $('.header-main__nav-tabs__img')
+
+    link.mouseover(function(){
+      tabsImg.show();
+    });
+    tabsImg.mouseleave(function(){
+      tabsImg.hide();
+    });
   </script>
 </body>
 </html>

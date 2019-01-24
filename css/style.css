@@ -396,7 +396,40 @@ template {
   text-transform: uppercase;
   text-decoration: none;
 }
-.header-main__nav-tabs-op {
+.header-main__nav-tabs:hover {
+  color: #56a7d4;
+  cursor: pointer;
+}
+.header-main__nav-tabs__img {
+  background-image: url("../img/header/header-tabs.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 1920px;
+  height: 46px;
+  display: none;
+  margin-top: -46px;
+  padding-top: 18px;
+}
+.header-main__nav-tabs__img-wrapper {
+  padding-left: 53.6%;
+}
+.header-main__nav-tabs__img__link {
+  color: #ffffff;
+  font-family: "Permian Serif Typeface";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+}
+.header-main__nav-tabs__img__link__line {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.header-main__nav-tabs__img__link:hover {
+  color: #cbe8f5;
+  cursor: pointer;
+}
+.header-main__nav-tabs__op {
   padding-right: 5px;
   color: #555555;
   font-family: "Permian Serif Typeface";
