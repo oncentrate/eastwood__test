@@ -403,14 +403,36 @@
           </div>
         </div>
       </div>
+
+      <div class="partners">
+        <div class="container">
+          <div class="partners__title">
+            Партнеры
+          </div>
+          
+          <div class="partners-wrapper">
+            <div class="partners__item">
+              <div class="partners__line"></div>
+              <img src="img/partners/partner__item.png" alt="" class="partners__item__img">
+            </div>   
+          </div>
+        </div>
+      </div>
+    <div class="partners__img">
+     <button class="partners__img__def"></button>
+     <button class="partners__img__top"></button>
+   </div>
+
+   
    
   
   
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/slider.js"></script>
+
   <script>
     var link = $('.header-main__nav-tabs');
     var tabsImg = $('.header-main__nav-tabs__img')
-
     link.mouseover(function(){
       tabsImg.show();
     });
@@ -418,6 +440,26 @@
       tabsImg.hide();
     });
   </script>
-  <script src="js/slider.js"></script>
+  
+  <script>
+   var btnToBottom = $('.partners__img__def');
+   var btnToTop = $('.partners__img__top');
+   btnToBottom.click(function(){
+    $('.partners-wrapper').css("display", function(){
+      btnToBottom.hide();
+      btnToTop.show();
+      return "block";
+    });
+    btnToTop.click(function () {
+      $('.partners-wrapper').css("display", function(){
+        btnToTop.hide();
+        btnToBottom.show();
+        return "none";
+      });
+    });
+   });
+
+  </script>
+  
 </body>
 </html>
