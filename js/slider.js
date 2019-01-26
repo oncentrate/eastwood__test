@@ -31,16 +31,8 @@ $(function () {
   }
 
   function animate() {
-    if (margin == -slideCount * slideWidth - slideWidth && course == 1) {     // Если слайдер дошел до конца
-      slider.css({ 'marginLeft': -slideWidth });           // то блок .slider возвращается в начальное положение
-      margin = -slideWidth * 2;
-    } else if (margin == 0 && course == -1) {                  // Если слайдер находится в начале и нажата кнопка "назад"
-      slider.css({ 'marginLeft': -slideWidth * slideCount });// то блок .slider перемещается в конечное положение
-      margin = -slideWidth * slideCount + slideWidth;
-    } else {                                              // Если условия выше не сработали,
-      margin = margin - slideWidth * (course);            // значение margin устанавливается для показа следующего слайда
-    }
-    slider.animate({ 'marginLeft': margin }, animateTime);  // Блок .slider смещается влево на 1 слайд.
+    slider.fadeOut(1300);                                  // Анимация слайдеру
+    slider.fadeIn(700); 
 
     if (clickBullets == 0) {                               // Если слайдер сменился не через выбор буллета
       bulletsActive();                                // Вызов функции, изменяющей активный буллет
